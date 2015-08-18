@@ -1,0 +1,39 @@
+" Pathogen
+execute pathogen#infect()
+
+" Font
+set guifont=Inconsolata:h16
+set linespace=24
+
+" Show hidden files in NerdTree
+let NERDTreeShowHidden=1
+
+" Solarized colorscheme
+let g:solarized_termcolors=256
+syntax enable
+set background=light
+colorscheme solarized
+
+" Use different backgrounds for vim and terminal
+if has('gui_running')
+  set background=dark
+else
+  set background=light
+endif
+
+" Nerd Tree mapping
+nnoremap \ :NERDTreeToggle<CR>
+nnoremap \| :NERDTreeFind<CR>
+
+" Resizing
+noremap + :10winc <<CR>
+noremap _ :10winc ><CR>
+
+" Use mouse
+set mouse=a
+
+" Allow plugins
+filetype plugin on
+
+" Set syntax highlighting for .ejs to html
+au BufNewFile,BufRead *.ejs set filetype=html

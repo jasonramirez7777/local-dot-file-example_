@@ -1,0 +1,5 @@
+Plug 'scrooloose/nerdtree'
+Plug 'wavded/vim-stylus'
+Plug 'juvenn/mustache.vim'
+Plug 'rking/ag.vim'
+Plug 'christoomey/vim-tmux-navigator'
