@@ -1,18 +1,25 @@
 " Pathogen
 execute pathogen#infect()
 
-" Font
-set guifont=Inconsolata:h16
-set linespace=24
-
 " Show hidden files in NerdTree
 let NERDTreeShowHidden=1
 
-" Solarized colorscheme
-let g:solarized_termcolors=256
+" Enable Syntax
 syntax enable
+
+" Use 256 Colors
+let g:solarized_termcolors=256
+
+" Font
+set guifont=Inconsolata:h16
+set linespace=2
+
+" Colorscheme Solarized
 set background=light
-colorscheme solarized
+colorscheme solarized 
+
+"Copy to System Clipboard with Control-C
+vnoremap <C-c> "*Y
 
 " Use different backgrounds for vim and terminal
 if has('gui_running')
@@ -31,6 +38,12 @@ noremap _ :10winc ><CR>
 
 " Use mouse
 set mouse=a
+
+" Redraw IED
+nnoremap <S-1> :redraw!<CR>
+
+" Tabs
+nnoremap <S-t> :tabe<CR>
 
 " Allow plugins
 filetype plugin on
