@@ -22,13 +22,6 @@ colorscheme solarized
 "Copy to System Clipboard with Control-C
 vnoremap <C-c> "*Y
 
-" Use different backgrounds for vim and terminal
-if has('gui_running')
-  set background=dark
-else
-  set background=light
-endif
-
 " Nerd Tree mapping
 nnoremap \ :NERDTreeToggle<CR>
 nnoremap \| :NERDTreeFind<CR>
