@@ -5,8 +5,11 @@ bind-key -n C-k run "tmux select-pane -U"
 bind-key -n C-l run "tmux select-pane -R"
 bind-key -n C-\ run "tmux select-pane -l"
 
-# clear buffer
-bind-key -n C-k send-keys -R \; clear-history
+# Use prefix C-l to clear the visible scrollback lines
+bind C-l send-keys 'C-l'
+
+# Use prefix C-k to clear the scrolled off (hidden) buffer lines
+bind C-k clear-history
 
 # List of plugins
 # Supports `github_username/repo` or full git repo URLs
