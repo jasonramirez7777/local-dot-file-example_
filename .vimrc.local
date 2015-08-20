@@ -1,5 +1,6 @@
-" Pathogen
+" vim-pathogen
 execute pathogen#infect()
+filetype plugin indent on
 
 " Show hidden files in NerdTree
 let NERDTreeShowHidden=1
@@ -44,9 +45,6 @@ nnoremap <S-1> :redraw!<CR>
 
 " Tabs
 nnoremap <S-t> :tabe<CR>
-
-" Allow plugins
-filetype plugin on
 
 " Set syntax highlighting for .ejs to html
 au BufNewFile,BufRead *.ejs set filetype=html

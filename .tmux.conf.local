@@ -6,7 +6,7 @@ bind-key -n C-l run "tmux select-pane -R"
 bind-key -n C-\ run "tmux select-pane -l"
 
 # clear buffer
-bind-key -n C-k send-keys -R \; clear-history \; send-keys "Enter"
+bind-key -n C-k send-keys -R \; clear-history
 
 # List of plugins
 # Supports `github_username/repo` or full git repo URLs
