@@ -7,7 +7,7 @@ set linespace=2
 
 " Colorscheme Solarized
 set background=light
-colorscheme solarized
+colorscheme github
 
 "Copy to System Clipboard with Control-C
 vnoremap <C-c> "*Y
