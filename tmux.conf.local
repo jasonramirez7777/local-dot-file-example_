@@ -11,6 +11,11 @@ bind C-l send-keys 'C-l'
 # Use prefix C-k to clear the scrolled off (hidden) buffer lines
 bind C-k clear-history
 
+# Mouse scrolling
+set -g mouse on
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
+bind -n WheelDownPane select-pane -t= \; send-keys -M
+
 # List of plugins
 # Supports `github_username/repo` or full git repo URLs
 set -g @plugin 'tmux-plugins/tpm'
