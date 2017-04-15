@@ -20,27 +20,31 @@ the config so it sources your local dotfiles.
 
 ## Installation
 
+Clone the repository:
+
 ```
-$ git clone https://github.com/jasonramirez/dotfiles_local.git
+$ git clone https://github.com/jasonramirez/dotfiles-local.git
 ```
 
-From the `ditfiles_local` directory, symlink any `*.local` dotfiles:
+Symlink all `*.local` dotfiles from `~/.*.local` to
+`/path/to/dotfiles-local/*.local`.
+From the `ditfiles-local` directory:
 
 ```
 $ ./setup.sh
 ```
 
-#### Manual Symbolic linking
+## Manual Symbolic linking
 
 OSX:
 
 ```
-$ ln /Users/username/dotfiles_local/.vimrc.local ~/.vimrc.local
+$ ln /Users/username/dotfiles-local/.vimrc.local ~/.vimrc.local
 ```
 
-## Files
+### Files
 
-* [.tmux.conf.local](https://github.com/jasonramirez/dotfiles_local/blob/master/.tmux.conf.local)
-* [.vimrc.bundles.local](https://github.com/jasonramirez/dotfiles_local/blob/master/.vimrc.bundles.local)
-* [.vimrc.local](https://github.com/jasonramirez/dotfiles_local/blob/master/.vimrc.local)
-* [.zshrc.local](https://github.com/jasonramirez/dotfiles_local/blob/master/.zshrc.local)
+* [.tmux.conf.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.tmux.conf.local)
+* [.vimrc.bundles.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.vimrc.bundles.local)
+* [.vimrc.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.vimrc.local)
+* [.zshrc.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.zshrc.local)
