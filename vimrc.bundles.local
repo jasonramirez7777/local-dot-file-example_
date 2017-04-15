@@ -1,5 +1,6 @@
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'flazz/vim-colorschemes'
+Plug 'heartsentwined/vim-emblem'
 Plug 'juvenn/mustache.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
