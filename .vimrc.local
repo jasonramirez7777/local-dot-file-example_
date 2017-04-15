@@ -4,6 +4,16 @@ let g:solarized_termcolors=256
 " Use silver searhcer
 let g:ackprg = 'ag --vimgrep'
 
+" Sytastic Javascript checker
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " Font
 set guifont=Inconsolata:h16
 set linespace=2
@@ -23,23 +33,23 @@ noremap \| :NERDTreeFind<CR>
 noremap - :10winc <<CR>
 noremap + :10winc ><CR>
 
-" Use mouse
-set mouse=a
-
 " Redraw IED
 noremap <S-1> :redraw!<CR>
 
 " Tabs
 noremap <S-t> :tabe<CR>
 
-" Set syntax highlighting for .ejs to html
-au BufNewFile,BufRead *.ejs set filetype=html
-
-" Read es6 as javascript
-autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+" Use mouse
+set mouse=a
 
 " Spell check
 set exrc
 
 " Use system clipboard
 set clipboard=unnamed
+
+" Set syntax highlighting for .ejs to html
+au BufNewFile,BufRead *.ejs set filetype=html
+
+" Read es6 as javascript
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
