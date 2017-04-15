@@ -1,11 +1,12 @@
 #!/bin/bash
 
 Files=(
+  "gitconfig.local"
+  "laptop.local"
   "tmux.conf.local"
   "vimrc.bundles.local"
   "vimrc.local"
   "zshrc.local"
-  "gitconfig.local"
 )
 
 for file in "${Files[@]}"
