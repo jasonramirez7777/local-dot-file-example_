@@ -1,6 +1,9 @@
 " Use 256 Colors
 let g:solarized_termcolors=256
 
+" Use silver searhcer
+let g:ackprg = 'ag --vimgrep'
+
 " Font
 set guifont=Inconsolata:h16
 set linespace=2
@@ -9,7 +12,7 @@ set linespace=2
 set background=light
 colorscheme github
 
-"Copy to System Clipboard with Control-C
+" Copy to System Clipboard with Control-C
 vnoremap <C-c> "*Y
 
 " Nerd Tree mapping
@@ -17,8 +20,8 @@ noremap \ :NERDTreeToggle<CR>
 noremap \| :NERDTreeFind<CR>
 
 " Resizing
-noremap + :10winc <<CR>
-noremap _ :10winc ><CR>
+noremap - :10winc <<CR>
+noremap + :10winc ><CR>
 
 " Use mouse
 set mouse=a
@@ -31,3 +34,12 @@ noremap <S-t> :tabe<CR>
 
 " Set syntax highlighting for .ejs to html
 au BufNewFile,BufRead *.ejs set filetype=html
+
+" Read es6 as javascript
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+
+" Spell check
+set exrc
+
+" Use system clipboard
+set clipboard=unnamed
