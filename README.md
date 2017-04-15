@@ -4,12 +4,12 @@ These are my personal configuration files, and are meant to extend [thoughtbot's
 dotfiles][1].  I keep my personal dotfiles isolated to avoid overwriting them
 when I update thoughtbot's dotfiles on my machine. My dotfiles include:
 
-* git config
-* laptop config
-* tmux config
-* vim bundles
-* vim config
-* zshell config
+* [.gitconfig.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.gitconfig.local)
+* [.laptop.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.laptop.local)
+* [.tmux.conf.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.tmux.conf.local)
+* [.vimrc.bundles.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.vimrc.bundles.local)
+* [.vimrc.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.vimrc.local)
+* [.zshrc.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.zshrc.local)
 
 [1]: https://github.com/thoughtbot/dotfiles/
 
@@ -44,11 +44,3 @@ OSX:
 $ ln /Users/username/dotfiles-local/.vimrc.local ~/.vimrc.local
 ```
 
-### Files
-
-* [.gitconfig.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.gitconfig.local)
-* [.laptop.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.laptop.local)
-* [.tmux.conf.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.tmux.conf.local)
-* [.vimrc.bundles.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.vimrc.bundles.local)
-* [.vimrc.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.vimrc.local)
-* [.zshrc.local](https://github.com/jasonramirez/dotfiles-local/blob/master/.zshrc.local)
