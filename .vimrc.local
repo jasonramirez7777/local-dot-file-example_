@@ -2,7 +2,7 @@
 let g:solarized_termcolors=256
 
 " Use silver searhcer
-let g:ackprg = 'ag --vimgrep'
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Sytastic Javascript checker
 set statusline+=%#warningmsg#
@@ -22,9 +22,6 @@ set linespace=2
 set background=light
 colorscheme github
 
-" Copy to System Clipboard with Control-C
-vnoremap <C-c> "*Y
-
 " Nerd Tree mapping
 noremap \ :NERDTreeToggle<CR>
 noremap \| :NERDTreeFind<CR>
@@ -38,9 +35,6 @@ noremap <S-1> :redraw!<CR>
 
 " Tabs
 noremap <S-t> :tabe<CR>
-
-" Use mouse
-set mouse=a
 
 " Spell check
 set exrc
