@@ -24,8 +24,8 @@ noremap \ :NERDTreeToggle<CR>
 noremap \| :NERDTreeFind<CR>
 
 " Resizing
-noremap - :10winc <<CR>
-noremap + :10winc ><CR>
+noremap = :10winc <<CR>
+noremap - :10winc ><CR>
 
 " Redraw IED
 noremap <S-1> :redraw!<CR>
