@@ -1,6 +1,3 @@
-" Use 256 Colors
-let g:solarized_termcolors=256
-
 " Use silver searhcer
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
