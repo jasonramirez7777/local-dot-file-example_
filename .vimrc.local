@@ -1,23 +1,19 @@
 " Use silver searhcer
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-" Sytastic Javascript checker
+" Sytastic
+set laststatus=2
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set statusline=%f "tail of the filename
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-" Font
-set guifont=Inconsolata:h16
-set linespace=2
-
-" Colorscheme Solarized
-set background=light
-colorscheme github
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe= '$(npm bin)/eslint'
 
 " Nerd Tree mapping
 noremap \ :NERDTreeToggle<CR>
@@ -35,9 +31,6 @@ noremap <S-t> :tabe<CR>
 
 " Spell check
 set exrc
-
-" Use system clipboard
-set clipboard=unnamed
 
 " Set syntax highlighting for .ejs to html
 au BufNewFile,BufRead *.ejs set filetype=html
