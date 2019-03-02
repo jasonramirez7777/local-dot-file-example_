@@ -2,5 +2,4 @@
 alias vim='/usr/local/bin/vim'
 
 # Use with rbenv
-# https://github.com/rbenv/rbenv
 eval "$(rbenv init -)"
