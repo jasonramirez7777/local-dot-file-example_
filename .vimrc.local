@@ -1,27 +1,24 @@
 " Use silver searhcer
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-" Sytastic
+" Syntastic
 set laststatus=2
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 set statusline=%f "tail of the filename
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exe= '$(npm bin)/eslint'
+
+" Running before saving async (vim 8+):
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.json,*.graphql,*.md PrettierAsync
 
 " Nerd Tree mapping
 noremap \ :NERDTreeToggle<CR>
 noremap \| :NERDTreeFind<CR>
 
 " Resizing
-noremap = :10winc <<CR>
-noremap - :10winc ><CR>
+noremap + :10winc <<CR>
+noremap _ :10winc ><CR>
 
 " Redraw IED
 noremap <S-1> :redraw!<CR>
