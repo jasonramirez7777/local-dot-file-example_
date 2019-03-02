@@ -1,7 +1,10 @@
 # Use default shell when starting tmux
 set-option -g default-shell /bin/zsh
 
-# smart pane switching with awareness of vim splits
+# Configure tmux to use MacOSX pasteboard
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# Smart pane switching with awareness of vim splits
 bind-key -n C-h run "tmux select-pane -L"
 bind-key -n C-j run "tmux select-pane -D"
 bind-key -n C-k run "tmux select-pane -U"
@@ -20,7 +23,6 @@ bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft=
 bind -n WheelDownPane select-pane -t= \; send-keys -M
 
 # List of plugins
-# Supports `github_username/repo` or full git repo URLs
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
