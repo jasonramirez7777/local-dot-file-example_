@@ -1,15 +1,11 @@
 # Use default shell when starting tmux
 set-option -g default-shell /bin/zsh
 
-# Configure tmux to use MacOSX pasteboard
-set-option -g default-command "reattach-to-user-namespace -l zsh"
-
 # Smart pane switching with awareness of vim splits
 bind-key -n C-h run "tmux select-pane -L"
 bind-key -n C-j run "tmux select-pane -D"
 bind-key -n C-k run "tmux select-pane -U"
 bind-key -n C-l run "tmux select-pane -R"
-bind-key -n C-\ run "tmux select-pane -l"
 
 # Use prefix C-l to clear the visible scrollback lines
 bind C-l send-keys 'C-l'
