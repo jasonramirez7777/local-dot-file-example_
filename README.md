@@ -44,3 +44,13 @@ OSX:
 $ ln /Users/username/dotfiles-local/.vimrc.local ~/.vimrc.local
 ```
 
+## Troubleshooting
+
+If certain features aren't seeming to work, try checking to make sure that your
+root config files are loading the local files. For example:
+
+```
+#.zshrc
+
+source ~/.zsrhc.local
+```
