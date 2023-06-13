@@ -2,16 +2,10 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 brew cask install 1password
-brew cask install alfred
 brew cask install dropbox
-brew cask install firefox
 brew cask install flux
-brew cask install framer-studio
 brew cask install github-desktop
-brew cask install google-chrome
 brew cask install iterm2
-brew cask install screenhero
-brew cask install sketch
 brew cask install slack
 brew cask install spectacle
 brew cask install spotify
@@ -21,7 +15,6 @@ gem install autoprefixer-rails
 gem install bitters
 gem install bourbon
 gem install bundler
-gem install middleman
 gem install neat
 gem install parity
 gem install sass
