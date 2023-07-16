@@ -26,6 +26,9 @@ noremap <S-1> :redraw!<CR>
 " Tabs
 noremap <S-t> :tabe<CR>
 
+" Allow for mouse scroll
+set mouse=a
+
 " Spell check
 set exrc
 
